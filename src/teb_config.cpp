@@ -30,7 +30,7 @@ namespace teb_local_planner
             printf("TebLocalPlannerROS() Param Warning: dt_ref <= dt_hysteresis. The hysteresis is not allowed to be greater or equal!. Undefined behavior... Change at least one of them!");
 
         // min number of samples
-        if (trajectory.min_samples <3)
+        if (trajectory.min_samples <5)
             printf("TebLocalPlannerROS() Param Warning: parameter min_samples is smaller than 3! Sorry, I haven't enough degrees of freedom to plan a trajectory for you. Please increase ...");
 
         // costmap obstacle behind robot
